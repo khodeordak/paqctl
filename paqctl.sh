@@ -1861,7 +1861,7 @@ create_management_script() {
 #!/bin/bash
 #
 # paqctl - Paqet Manager
-# https://github.com/SamNet-dev/paqet
+# https://github.com/SamNet-dev/paqctl
 #
 
 VERSION="1.0.0"
@@ -5748,7 +5748,7 @@ show_info_menu() {
                 echo "     destination on the open internet."
                 echo ""
                 echo -e "  ${DIM}Technical stack: Go, gopacket, libpcap, KCP, smux, AES${NC}"
-                echo -e "  ${DIM}Project: https://github.com/SamNet-dev/paqet${NC}"
+                echo -e "  ${DIM}Project: https://github.com/SamNet-dev/paqctl${NC}"
                 echo ""
                 read -n 1 -s -r -p "  Press any key..." < /dev/tty || true
                 redraw=true
@@ -5901,7 +5901,7 @@ show_info_menu() {
                 echo -e "  ${CYAN}── Paqet ──${NC}"
                 echo ""
                 echo -e "  ${BOLD}Creator:${NC}    hanselime"
-                echo -e "  ${BOLD}Repository:${NC} https://github.com/SamNet-dev/paqet"
+                echo -e "  ${BOLD}Repository:${NC} https://github.com/SamNet-dev/paqctl"
                 echo -e "  ${BOLD}License:${NC}    MIT"
                 echo -e "  ${BOLD}Language:${NC}   Go"
                 echo -e "  ${BOLD}Contact:${NC}    Signal @hanselime.11"

@@ -419,14 +419,16 @@ macOS requires manual setup since there's no automated script yet.
 # Create directory
 mkdir -p ~/paqet && cd ~/paqet
 
-# Download latest release (check GitHub for current version)
-curl -LO https://github.com/SamNet-dev/paqctl/releases/download/v1.0.0-alpha.12/paqet_darwin_amd64
+# Download latest release (Intel Mac)
+curl -LO https://github.com/SamNet-dev/paqctl/releases/download/v1.0.0-alpha.12/paqet-darwin-amd64-v1.0.0-alpha.12.tar.gz
+tar -xzf paqet-darwin-amd64-v1.0.0-alpha.12.tar.gz
 
 # For Apple Silicon (M1/M2/M3):
-# curl -LO https://github.com/SamNet-dev/paqctl/releases/download/v1.0.0-alpha.12/paqet_darwin_arm64
+# curl -LO https://github.com/SamNet-dev/paqctl/releases/download/v1.0.0-alpha.12/paqet-darwin-arm64-v1.0.0-alpha.12.tar.gz
+# tar -xzf paqet-darwin-arm64-v1.0.0-alpha.12.tar.gz
 
 # Make executable
-chmod +x paqet_darwin_*
+chmod +x paqet
 ```
 
 #### Step 3: Create Config File
@@ -593,8 +595,9 @@ Then run GFK from within the venv.
 ```bash
 # Download paqet
 mkdir -p ~/paqet && cd ~/paqet
-curl -LO https://github.com/SamNet-dev/paqctl/releases/download/v1.0.0-alpha.12/paqet_linux_amd64
-chmod +x paqet_linux_amd64
+curl -LO https://github.com/SamNet-dev/paqctl/releases/download/v1.0.0-alpha.12/paqet-linux-amd64-v1.0.0-alpha.12.tar.gz
+tar -xzf paqet-linux-amd64-v1.0.0-alpha.12.tar.gz
+chmod +x paqet
 
 # Create config
 cat > config.yaml << 'EOF'
@@ -1107,12 +1110,14 @@ macOS نیاز به راه‌اندازی دستی دارد.
 mkdir -p ~/paqet && cd ~/paqet
 
 # برای Intel Mac:
-curl -LO https://github.com/SamNet-dev/paqctl/releases/download/v1.0.0-alpha.12/paqet_darwin_amd64
+curl -LO https://github.com/SamNet-dev/paqctl/releases/download/v1.0.0-alpha.12/paqet-darwin-amd64-v1.0.0-alpha.12.tar.gz
+tar -xzf paqet-darwin-amd64-v1.0.0-alpha.12.tar.gz
 
 # برای Apple Silicon (M1/M2/M3):
-curl -LO https://github.com/SamNet-dev/paqctl/releases/download/v1.0.0-alpha.12/paqet_darwin_arm64
+# curl -LO https://github.com/SamNet-dev/paqctl/releases/download/v1.0.0-alpha.12/paqet-darwin-arm64-v1.0.0-alpha.12.tar.gz
+# tar -xzf paqet-darwin-arm64-v1.0.0-alpha.12.tar.gz
 
-chmod +x paqet_darwin_*
+chmod +x paqet
 ```
 
 #### مرحله ۳: ایجاد فایل پیکربندی
@@ -1199,8 +1204,9 @@ sudo python3 mainclient.py
 ```bash
 # دانلود paqet
 mkdir -p ~/paqet && cd ~/paqet
-curl -LO https://github.com/SamNet-dev/paqctl/releases/download/v1.0.0-alpha.12/paqet_linux_amd64
-chmod +x paqet_linux_amd64
+curl -LO https://github.com/SamNet-dev/paqctl/releases/download/v1.0.0-alpha.12/paqet-linux-amd64-v1.0.0-alpha.12.tar.gz
+tar -xzf paqet-linux-amd64-v1.0.0-alpha.12.tar.gz
+chmod +x paqet
 
 # ایجاد config
 cat > config.yaml << 'EOF'
