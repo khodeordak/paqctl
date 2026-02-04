@@ -712,7 +712,10 @@ export ALL_PROXY=socks5://127.0.0.1:1080
 
 ---
 
-## Offline/Manual Installation (If GitHub is Blocked)
+<details>
+<summary><h3>📦 Offline/Manual Installation - If GitHub is Blocked (Click to expand)</h3></summary>
+
+## Offline/Manual Installation
 
 Can't download from GitHub? (e.g., behind DPI/firewall in Iran, China, etc.)
 
@@ -901,6 +904,8 @@ You should see:
 - You don't need `paqctl` script for basic usage - paqet runs standalone
 - Server and client versions should match
 - For GFK, the process is more complex (needs Python) - use paqet if possible
+
+</details>
 
 ---
 
@@ -1567,7 +1572,10 @@ Firefox: Settings → Network Settings → Manual proxy → SOCKS5 `127.0.0.1:10
 
 ---
 
-## نصب آفلاین/دستی (اگر GitHub مسدود است)
+<details>
+<summary><h3>📦 نصب آفلاین/دستی - اگر GitHub مسدود است (کلیک کنید)</h3></summary>
+
+## نصب آفلاین/دستی
 
 نمی‌توانید از GitHub دانلود کنید؟ (مثلاً پشت فایروال در ایران، چین و غیره)
 
@@ -1750,6 +1758,8 @@ paqet.exe -config config.yaml
 
 **برای توقف paqet:**
 - در ترمینال `Ctrl+C` بزنید
+
+</details>
 
 ---
 
