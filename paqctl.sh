@@ -32,7 +32,7 @@ fi
 VERSION="1.0.0"
 
 # Pinned versions for stability (update these after testing new releases)
-PAQET_VERSION_PINNED="v1.0.0-alpha.12"
+PAQET_VERSION_PINNED="v1.0.0-alpha.13"
 XRAY_VERSION_PINNED="v26.2.4"
 GFK_VERSION_PINNED="v1.0.0"
 
@@ -1867,7 +1867,7 @@ create_management_script() {
 VERSION="1.0.0"
 
 # Pinned versions for stability (update these after testing new releases)
-PAQET_VERSION_PINNED="v1.0.0-alpha.12"
+PAQET_VERSION_PINNED="v1.0.0-alpha.13"
 XRAY_VERSION_PINNED="v26.2.4"
 GFK_VERSION_PINNED="v1.0.0"
 
