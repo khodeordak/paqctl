@@ -875,7 +875,7 @@ generate_config() {
     _escape_yaml() {
         local s="$1"
         # If value contains special chars, quote it
-        if [[ "$s" =~ [:\#\[\]\{\}\"\'\|\>\<\&\*\!\%\@\`] ]] || [[ "$s" =~ ^[[:space:]] ]] || [[ "$s" =~ [[:space:]]$ ]]; then
+        if [[ "$s" =~ [:\#\[\]{}\"\'\|\>\<\&\*\!\%\@\`] ]] || [[ "$s" =~ ^[[:space:]] ]] || [[ "$s" =~ [[:space:]]$ ]]; then
             s="${s//\\/\\\\}"  # Escape backslashes
             s="${s//\"/\\\"}"  # Escape double quotes
             printf '"%s"' "$s"
@@ -4573,7 +4573,7 @@ change_config() {
     # Escape YAML special characters to prevent injection
     _escape_yaml() {
         local s="$1"
-        if [[ "$s" =~ [:\#\[\]\{\}\"\'\|\>\<\&\*\!\%\@\`] ]] || [[ "$s" =~ ^[[:space:]] ]] || [[ "$s" =~ [[:space:]]$ ]]; then
+        if [[ "$s" =~ [:\#\[\]{}\"\'\|\>\<\&\*\!\%\@\`] ]] || [[ "$s" =~ ^[[:space:]] ]] || [[ "$s" =~ [[:space:]]$ ]]; then
             s="${s//\\/\\\\}"; s="${s//\"/\\\"}"; printf '"%s"' "$s"
         else
             printf '%s' "$s"
@@ -5713,7 +5713,7 @@ _install_paqet_components() {
         # Helper to escape YAML values
         _escape_yaml_val() {
             local s="$1"
-            if [[ "$s" =~ [:\#\[\]\{\}\"\'\|\>\<\&\*\!\%\@\`] ]] || [[ "$s" =~ ^[[:space:]] ]] || [[ "$s" =~ [[:space:]]$ ]]; then
+            if [[ "$s" =~ [:\#\[\]{}\"\'\|\>\<\&\*\!\%\@\`] ]] || [[ "$s" =~ ^[[:space:]] ]] || [[ "$s" =~ [[:space:]]$ ]]; then
                 s="${s//\\/\\\\}"; s="${s//\"/\\\"}"; printf '"%s"' "$s"
             else
                 printf '%s' "$s"
