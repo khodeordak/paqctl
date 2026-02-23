@@ -7,10 +7,10 @@
 |_|             |_|
 ```
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/SamNet-dev/paqctl/releases)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/khodeordak/paqctl/releases)
 [![License](https://img.shields.io/badge/license-AGPL--3.0-green.svg)](LICENSE)
-[![Server](https://img.shields.io/badge/server-Linux-lightgrey.svg)](https://github.com/SamNet-dev/paqctl)
-[![Client](https://img.shields.io/badge/client-Windows%20%7C%20macOS%20%7C%20Linux-green.svg)](https://github.com/SamNet-dev/paqctl)
+[![Server](https://img.shields.io/badge/server-Linux-lightgrey.svg)](https://github.com/khodeordak/paqctl)
+[![Client](https://img.shields.io/badge/client-Windows%20%7C%20macOS%20%7C%20Linux-green.svg)](https://github.com/khodeordak/paqctl)
 
 **Bypass firewall restrictions and access the free internet**
 
@@ -117,7 +117,7 @@ If your foreign server already has an Xray panel (3x-ui, Marzban, etc.), paqctl 
 |---|---|
 | **No Xray installed** | Installs Xray with SOCKS5 proxy automatically (nothing to configure) |
 | **Xray panel running** | Keeps your panel, adds a SOCKS5 inbound on a free port (e.g. 10443), appends an extra port mapping automatically |
-| **Xray installed but not running** | Installs its own SOCKS5 (same as fresh install) |
+| **Xray installed but not running** | Installs its own SOCKS5 (e as fresh install) |
 
 When a panel is detected, paqctl gives you **two connections** automatically:
 - **Panel mapping** (`14000:443`) — for server-to-server panel traffic (vmess/vless)
@@ -131,7 +131,7 @@ This is for when you have a panel on **both** servers (Iran + foreign) and want 
 
 **1. Install paqctl on the foreign server (server role):**
 ```bash
-curl -fsSL https://raw.githubusercontent.com/SamNet-dev/paqctl/main/paqctl.sh | sudo bash
+curl -fsSL https://raw.githubusercontent.com/Net-dev/paqctl/main/paqctl.sh | sudo bash
 ```
 - Choose **server** role
 - Set port mapping: `14000:443` (where `443` is your panel's inbound port)
@@ -139,11 +139,11 @@ curl -fsSL https://raw.githubusercontent.com/SamNet-dev/paqctl/main/paqctl.sh | 
 
 **2. Install paqctl on the Iran server (client role):**
 ```bash
-curl -fsSL https://raw.githubusercontent.com/SamNet-dev/paqctl/main/paqctl.sh | sudo bash
+curl -fsSL https://raw.githubusercontent.com/Net-dev/paqctl/main/paqctl.sh | sudo bash
 ```
 - Choose **client** role
-- Use the **exact same** port mappings shown in the server output (e.g. `14000:443,14001:10443`)
-- Use the same auth code from the server setup
+- Use the **exact e** port mappings shown in the server output (e.g. `14000:443,14001:10443`)
+- Use the e auth code from the server setup
 
 **3. Update your Iran panel outbound to route through GFK:**
 
@@ -235,7 +235,7 @@ paqctl will add SOCKS5 on the next available port and append it automatically.
 Run this on your VPS (requires root):
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/SamNet-dev/paqctl/main/paqctl.sh | sudo bash
+curl -fsSL https://raw.githubusercontent.com/khodeordak/paqctl/main/paqctl.sh | sudo bash
 ```
 
 > The installer automatically downloads the latest paqet release from GitHub.
@@ -277,7 +277,7 @@ The simplest way to get started - just download, double-click, and connect!
 
 ### Step 1: Download
 
-1. Go to: https://github.com/SamNet-dev/paqctl
+1. Go to: https://github.com/khodeordak/paqctl
 2. Click the green **"Code"** button → **"Download ZIP"**
 3. Extract the ZIP file anywhere (e.g., Desktop)
 4. Open the `windows` folder inside
@@ -326,12 +326,12 @@ For more control, use the interactive PowerShell menu.
 
 **Option A: One-liner (downloads and runs automatically)**
 ```powershell
-irm https://raw.githubusercontent.com/SamNet-dev/paqctl/main/windows/paqet-client.ps1 | iex
+irm https://raw.githubusercontent.com/khodeordak/paqctl/main/windows/paqet-client.ps1 | iex
 ```
 
 **Option B: Download first, then run**
 ```powershell
-git clone https://github.com/SamNet-dev/paqctl.git
+git clone https://github.com/khodeordak/paqctl.git
 cd paqctl\windows
 .\paqet-client.ps1
 ```
@@ -646,7 +646,7 @@ brew install python@3.11
 #### Step 2: Clone the Repository
 
 ```bash
-git clone https://github.com/SamNet-dev/paqctl.git
+git clone https://github.com/khodeordak/paqctl.git
 cd paqctl/gfk/client
 ```
 
@@ -814,7 +814,7 @@ sudo apt install python3 python3-pip  # Debian/Ubuntu
 pip3 install scapy aioquic
 
 # Clone and configure
-git clone https://github.com/SamNet-dev/paqctl.git
+git clone https://github.com/khodeordak/paqctl.git
 cd paqctl/gfk/client
 
 # Create parameters.py (same as macOS section above)
@@ -1142,7 +1142,7 @@ This tool is for legitimate privacy and access needs. Laws vary by country. Use 
 ## Contributing
 
 Issues and pull requests are welcome at:
-https://github.com/SamNet-dev/paqctl
+https://github.com/khodeordak/paqctl
 
 ---
 
@@ -1252,7 +1252,7 @@ AGPL-3.0 License - See [LICENSE](LICENSE) file.
 
 **۱. نصب paqctl روی سرور خارج (نقش server):**
 ```bash
-curl -fsSL https://raw.githubusercontent.com/SamNet-dev/paqctl/main/paqctl.sh | sudo bash
+curl -fsSL https://raw.githubusercontent.com/khodeordak/paqctl/main/paqctl.sh | sudo bash
 ```
 - نقش **server** را انتخاب کنید
 - مپینگ پورت: `14000:443` (که `443` پورت اینباند پنل شماست)
@@ -1260,7 +1260,7 @@ curl -fsSL https://raw.githubusercontent.com/SamNet-dev/paqctl/main/paqctl.sh | 
 
 **۲. نصب paqctl روی سرور ایران (نقش client):**
 ```bash
-curl -fsSL https://raw.githubusercontent.com/SamNet-dev/paqctl/main/paqctl.sh | sudo bash
+curl -fsSL https://raw.githubusercontent.com/khodeordak/paqctl/main/paqctl.sh | sudo bash
 ```
 - نقش **client** را انتخاب کنید
 - **دقیقاً همان** مپینگ‌هایی که در خروجی سرور نمایش داده شد را استفاده کنید (مثلاً `14000:443,14001:10443`)
@@ -1356,7 +1356,7 @@ paqctl به صورت خودکار SOCKS5 را روی پورت آزاد بعدی 
 این دستور را روی VPS خود اجرا کنید (نیاز به root دارد):
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/SamNet-dev/paqctl/main/paqctl.sh | sudo bash
+curl -fsSL https://raw.githubusercontent.com/khodeordak/paqctl/main/paqctl.sh | sudo bash
 ```
 
 سپس منوی تعاملی را باز کنید:
@@ -1396,7 +1396,7 @@ sudo paqctl info
 
 ### مرحله ۱: دانلود
 
-1. بروید به: https://github.com/SamNet-dev/paqctl
+1. بروید به: https://github.com/khodeordak/paqctl
 2. روی دکمه سبز **"Code"** کلیک کنید → **"Download ZIP"**
 3. فایل ZIP را در هر جایی استخراج کنید (مثلاً دسکتاپ)
 4. وارد پوشه `windows` شوید
@@ -1445,12 +1445,12 @@ sudo paqctl info
 
 **گزینه A: یک خطی (خودکار دانلود و اجرا می‌کند)**
 ```powershell
-irm https://raw.githubusercontent.com/SamNet-dev/paqctl/main/windows/paqet-client.ps1 | iex
+irm https://raw.githubusercontent.com/khodeordak/paqctl/main/windows/paqet-client.ps1 | iex
 ```
 
 **گزینه B: اول دانلود، بعد اجرا**
 ```powershell
-git clone https://github.com/SamNet-dev/paqctl.git
+git clone https://github.com/khodeordak/paqctl.git
 cd paqctl\windows
 .\paqet-client.ps1
 ```
@@ -1740,7 +1740,7 @@ brew install python@3.11
 #### مرحله ۲: کلون مخزن
 
 ```bash
-git clone https://github.com/SamNet-dev/paqctl.git
+git clone https://github.com/khodeordak/paqctl.git
 cd paqctl/gfk/client
 ```
 
@@ -1832,7 +1832,7 @@ sudo apt install python3 python3-pip  # Debian/Ubuntu
 pip3 install scapy aioquic
 
 # کلون و پیکربندی
-git clone https://github.com/SamNet-dev/paqctl.git
+git clone https://github.com/khodeordak/paqctl.git
 cd paqctl/gfk/client
 
 # ایجاد parameters.py (مشابه بخش macOS)
@@ -2139,7 +2139,7 @@ sudo paqctl logs      # مشاهده لاگ‌ها
 ## مشارکت
 
 مشکلات و pull request در گیت‌هاب:
-https://github.com/SamNet-dev/paqctl
+https://github.com/khodeordak/paqctl
 
 ---
 
