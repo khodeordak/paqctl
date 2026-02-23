@@ -32,8 +32,8 @@ fi
 VERSION="1.0.0"
 
 # Pinned versions for stability (update these after testing new releases)
-PAQET_VERSION_PINNED="v1.0.0-alpha.17"
-XRAY_VERSION_PINNED="v26.2.4"
+PAQET_VERSION_PINNED="v1.0.0-alpha.18"
+XRAY_VERSION_PINNED="v26.2.6"
 GFK_VERSION_PINNED="v1.0.0"
 
 PAQET_REPO="hanselime/paqet"
@@ -2229,8 +2229,8 @@ create_management_script() {
 VERSION="1.0.0"
 
 # Pinned versions for stability (update these after testing new releases)
-PAQET_VERSION_PINNED="v1.0.0-alpha.17"
-XRAY_VERSION_PINNED="v26.2.4"
+PAQET_VERSION_PINNED="v1.0.0-alpha.18"
+XRAY_VERSION_PINNED="v26.2.6"
 GFK_VERSION_PINNED="v1.0.0"
 
 INSTALL_DIR="REPLACE_ME_INSTALL_DIR"
